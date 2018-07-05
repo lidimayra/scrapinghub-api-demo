@@ -19,8 +19,9 @@ def index():
 
     for item in job.items.iter():
         dict = {
-            'topic': item['topic'][0],
-            'harmed_people': item['harmed_people'][0]
+            'title': item['title'][0],
+            'director': item['director'][0],
+            'summary': item['summary'][0]
         }
         data.append(dict)
 

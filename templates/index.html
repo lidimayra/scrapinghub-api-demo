@@ -1,9 +1,11 @@
 <html>
   <body>
     {% for d in data %}
+    <h2>{{ d['title'] }} ({{ d['director'] }})</h2>
       <p>
-        {{ d['topic'] }}: {{ d['harmed_people'] }}
+        {{ d['summary'] }}
       </p>
+      <hr>
     {% endfor %}
   </body>
 </html>
