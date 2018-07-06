@@ -3,12 +3,11 @@ Quite simple app to demonstrate Scrapinghub API basic features.
 
 ## Pre-requisites
 - Python 3.6
-- Flask
-- Scrapinghub client interface
 
 ## Installing
 ```
 $ git clone git@github.com:lidimayra/scrapinghub-api-demo.git && cd scrapinghub-api-demo
+$ pip install -r requirements.txt
 ```
 
 ## Setup
