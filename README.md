@@ -15,7 +15,6 @@ $ git clone git@github.com:lidimayra/scrapinghub-api-demo.git && cd scrapinghub-
 Export required environment variables:
 
 ```
-$ export FLASK_APP=demo.py
 $ export FLASK_ENV=development
 $ export APIKEY=<Scrapinghub API key>
 $ export JOB_ID=<Scrapinghub Job ID>
