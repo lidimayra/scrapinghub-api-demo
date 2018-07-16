@@ -1,17 +1,19 @@
-## Demo app that consumes Scrapinghub API
-Quite simple app to demonstrate Scrapinghub API basic features.
+## App demo que consome a API do Scrapinghub
+App bem simples para demonstrar as funcionalidades básicas da
+API do Scrapinghub
 
-## Pre-requisites
-- Python 3.6
+### Pré-requisitos
+- [Python](https://www.python.org/) >= 3.6
 
-## Installing
+
+## Instalação
 ```
 $ git clone git@github.com:lidimayra/scrapinghub-api-demo.git && cd scrapinghub-api-demo
 $ pip install -r requirements.txt
 ```
 
-## Setup
-Export required environment variables:
+## Configurações
+Exporte as variáveis de ambiente necessárias:
 
 ```
 $ export FLASK_ENV=development
@@ -19,7 +21,7 @@ $ export APIKEY=<Scrapinghub API key>
 $ export JOB_ID=<Scrapinghub Job ID>
 ```
 
-## To run application
+## Para rodar a aplicação
 ```
 $ flask run
 ```
