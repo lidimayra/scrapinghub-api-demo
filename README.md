@@ -13,13 +13,8 @@ $ pip install -r requirements.txt
 ```
 
 ## Configurações
-Exporte as variáveis de ambiente necessárias:
-
-```
-$ export FLASK_ENV=development
-$ export APIKEY=<Scrapinghub API key>
-$ export JOB_ID=<Scrapinghub Job ID>
-```
+Faça uma cópia do arquivo `.env.sample` chamada `.env` atualizando com os seus
+dados a chave do Scrapinghub e o Job ID.
 
 ## Para rodar a aplicação
 ```
