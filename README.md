@@ -1,24 +1,35 @@
-# App demo que consome a API do Scrapinghub
-App bem simples para demonstrar as funcionalidades básicas da
-API do Scrapinghub
+# Sample app to demo Scrapinghub API usage
+A very simple flask app created to demo basic funcionality when working with Scrapinghub API
 
-## Configurações
-Faça uma cópia do arquivo `scrapingapp/.env.sample` chamada `scrapingapp/.env`
-atualizando com os seus dados a chave do Scrapinghub e o Job ID.
-
-## Rodando a aplicação com o Docker
-```
-$ git clone git@github.com:lidimayra/scrapinghub-api-demo.git && cd scrapinghub-api-demo
-$ docker build -t scrapingapp .
-$ docker run -p 5000:5000 scrapingapp
-```
-
-## Rodando a aplicação localmente
-
-**Pré-requisito**: [Python](https://www.python.org/) >= 3.6
+## Setup
+Clone the repository and navigate to its directory:
 
 ```
-$ git clone git@github.com:lidimayra/scrapinghub-api-demo.git && cd scrapinghub-api-demo
-$ pip install -r requirements.txt
-$ flask run
+git clone git@github.com:lidimayra/scrapinghub-api-demo.git && cd scrapinghub-api-demo
+```
+
+Copy the `scrapingapp/.env.sample` file and name it as `scrapingapp/.env`.
+
+```
+cp scrapingapp/.env.sample scrapingapp/.env
+```
+
+Update the `APIKEY` and `JOB_ID` values on it to match the ones provided to you on Scrapinghub dashboard.
+
+## Run it on docker
+Build the docker imagine and spin up a container:
+
+```
+docker build -t scrapingapp .
+docker run -p 5000:5000 scrapingapp
+```
+
+## Run it locally
+
+**Pre-requisite**: [Python](https://www.python.org/) >= 3.13.1
+
+```
+cd scrapingapp
+pip install -r requirements.txt
+flask run
 ```
