@@ -10,10 +10,13 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     apikey = os.environ.get("APIKEY")
-    job_id = os.environ.get("JOB_ID")
+    project_id = os.environ.get("PROJECT_ID")
 
     client = ScrapinghubClient(apikey)
-    job = client.get_job(job_id)
+    project = client.get_project(project_id)
+
+    job_key = project.jobs.list(count=1, state='finished')[0].get('key')
+    job = client.get_job(job_key)
 
     data = []
 

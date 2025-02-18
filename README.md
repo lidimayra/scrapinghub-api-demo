@@ -14,7 +14,7 @@ Copy the `scrapingapp/.env.sample` file and name it as `scrapingapp/.env`.
 cp scrapingapp/.env.sample scrapingapp/.env
 ```
 
-Update the `APIKEY` and `JOB_ID` values on it to match the ones provided to you on Scrapinghub dashboard.
+Update the `APIKEY` and `PROJECT_ID` values on it to match the ones provided to you on Scrapinghub dashboard.
 
 ## Run it on docker
 Build the docker imagine and spin up a container:
