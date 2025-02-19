@@ -1,5 +1,5 @@
-# Sample app to demo Scrapinghub API usage
-A very simple flask app created to demo basic funcionality when working with Scrapinghub API
+# Scrapinghub API usage
+A very simple flask app created to demo basic funcionality when working with Scrapinghub API (Zyte)
 
 ## Setup
 Clone the repository and navigate to its directory:
