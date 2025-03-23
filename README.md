@@ -31,5 +31,5 @@ docker run -p 5000:5000 scrapingapp
 ```
 cd scrapingapp
 pip install -r requirements.txt
-flask run
+flask --app app run
 ```
