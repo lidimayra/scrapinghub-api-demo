@@ -1,0 +1,23 @@
+body {
+  font-family: Helvetica;
+  background-color: #FFFAF0;
+}
+
+.header {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2em 2em 0em 2em;
+}
+
+.movie-container {
+  display: flex;
+  padding: 1em;
+  flex-flow: row wrap;
+}
+
+.movie {
+  background-color: #ffc;
+  padding: 1em;
+  margin: 1em;
+  width: 25%;
+}

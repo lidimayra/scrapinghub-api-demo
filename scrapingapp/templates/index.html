@@ -1,11 +1,40 @@
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+  </head>
   <body>
-    {% for d in data %}
-    <h2>{{ d['title'] }} ({{ d['director'] }})</h2>
-      <p>
-        {{ d['summary'] }}
-      </p>
+    <div class="header">
+      <h1>Most popular movies</h1>
+      <i><a
+             href="https://github.com/lidimayra/scrapinghub-api-demo">lidimayra/scrapinghub-api-demo</a></i>
       <hr>
-    {% endfor %}
+      <p>
+        A list of the most popular movies according to <a href="https://www.rottentomatoes.com">Rotten Tomatoes</a>.
+      </p>
+
+      <p>
+        The starting point for building our list is <a
+          href="https://www.rottentomatoes.com/browse/movies_in_theaters/sort:popular">
+          https://www.rottentomatoes.com/browse/movies_in_theaters/sort:popular</a>.
+        That's where we get the titles from. Then, our spider accesses the pages associated with each one of the movies in
+        that list to extract the movie's director name and synopsis.
+      </p>
+
+      <p>The data was fetched using the <a href="https://docs.zyte.com/scrapy-cloud/usage/reference/http/index.html">
+        Scrapy Cloud API.</a></p>
+    </div>
+
+    <div class="movie-container">
+      {% for d in data %}
+      <div class="movie">
+        <h3>{{ d['title'] }}</h3>
+          <i>{{d['director']}}</i>
+          <p>
+            {{ d['summary'] }}
+          </p>
+      </div>
+
+      {% endfor %}
+    </div>
   </body>
 </html>
